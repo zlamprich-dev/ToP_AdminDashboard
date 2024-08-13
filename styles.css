@@ -1,0 +1,56 @@
+.container {
+    text-align: center;
+    background-color: aquamarine;
+    display: grid;
+    grid-template: 1fr 1fr 1fr 1fr 1fr/ 1fr 1fr 1fr 1fr 1fr;
+}
+
+.grid {
+    border: 1px solid black;
+}
+
+
+#sideBar {
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 1;
+    grid-row-end: 6;
+}
+
+#header {
+    height: 100px;
+    display: grid;
+    grid-template: 1fr 1fr 1fr/ 2.5fr 1fr;
+    grid-column-start: 2;
+    grid-column-end: 6;
+}
+
+#mainContentArea {
+    display: grid;
+    grid-template: 1fr 1fr 1fr / 1fr 1fr 1fr;
+    grid-row-start: 2;
+    grid-row-end: 6;
+    grid-column-start: 2;
+    grid-column-end: 6;
+}
+
+#cardSet {
+    display: grid;
+    grid-template: 1fr 1fr 1fr / 1fr 1fr;
+    grid-column-start: 1;
+    grid-column-end: 3;
+    grid-row-start: 1;
+    grid-row-end: 4;
+
+}
+
+
+#rightCardSet {
+    display: grid;
+    grid-template: 1fr 1fr / 1fr;
+    gap: 20px; 
+    grid-column-start: 3;
+    grid-column-end: 4;
+    grid-row-start: 1;
+    grid-row-end: 4;
+}
