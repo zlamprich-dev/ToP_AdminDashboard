@@ -9,9 +9,7 @@ body {
     grid-template: 1fr 1fr 1fr 1fr 1fr/ 1fr 1fr 1fr 1fr 1fr;
 }
 
-.grid {
-    border: 1px solid black;
-}
+
 
 
 #sideBar {
@@ -34,6 +32,7 @@ body {
 }
 
 #mainContentArea {
+    padding-left: 20px;
     background-color: #27374D;
     display: grid;
     grid-template: 1fr 1fr 1fr / 1fr 1fr 1fr;
@@ -43,13 +42,20 @@ body {
     grid-column-end: 6;
 }
 
-#mainContentArea p {
-    color: #DDE6ED;
-    position: fixed;
+#mainCardAreaTitle {
+    position: absolute;
+    color: aqua;
+}
+
+#rightCardAreaTitle {
+    left: 50vw;
+    bottom: 36vh;
+    position: relative;
+    color: yellow;
 }
 
 #cardSet {
-    background-color: #DDE6ED;
+    background-color: transparent;
     color: black;
     margin-top: 50px;
     row-gap: 10px;
@@ -63,9 +69,16 @@ body {
 
 }
 
+#cardSet>div {
+    box-shadow: 1px 1px 5px black;
+    border: 1px solid black;
+    border-radius: 8px;
+    background-color: antiquewhite;
+}
+
 
 #rightCardSet {
-    background-color: #DDE6ED;
+    background-color: transparent;
     color: black;
     margin-top: 50px;
     margin-left: 10px;
@@ -77,4 +90,10 @@ body {
     grid-column-end: 4;
     grid-row-start: 1;
     grid-row-end: 4;
+}
+
+#rightCardSet>div {
+    box-shadow: 1px 1px 5px black;
+    border-radius: 8px;
+    background-color: antiquewhite;
 }
