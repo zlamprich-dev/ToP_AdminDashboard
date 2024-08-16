@@ -1,3 +1,18 @@
+@font-face {
+    font-family: primFont;
+    src: url(resources/fonts/BebasNeue-Regular.otf);
+}
+
+@font-face {
+    font-family: menu;
+    src: url(resources/fonts/modern\ M.ttf);
+}
+
+@font-face {
+    font-family: creamCake;
+    src: url(resources/fonts/Cream\ Cake.otf);
+}
+
 body {
     margin: 0px;
 }
@@ -14,30 +29,60 @@ body {
 
 
 #sideBar {
-    background-image: linear-gradient(#D4145A, #FBB03B);
-    filter: drop-shadow(0 0 30px #000);
+    background: linear-gradient(#161B25 0%, #394650 100%);
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 24px;
+    color: white;
     display: grid;
     grid-template: .5fr;
     grid-column-start: 1;
     grid-column-end: 2;
     grid-row-start: 1;
     grid-row-end: 6;
+    padding-top: 3%;
+    padding-right: 82%;
+    padding-left: 3%;
 }
 
 #header {
-    background-color: rgb(255, 153, 0);
+    background: linear-gradient(#161B25 0%, #394650 100%);
     display: grid;
-
-    grid-template: 1fr 1fr/ 2.5fr 1fr;
+    text-align: center;
+    grid-template: .25fr 1fr/ 2.5fr 1fr;
     grid-column-start: 2;
     grid-column-end: 6;
 }
 
-#header input {
-    
-    height: 2.5vh;
-    width: 25vw;
+#icons {
+    padding-top: 40%;
+    padding-left: 70%;
+}
 
+#searchDiv {
+    padding-right: 70%;
+}
+
+#appText {
+    color: white;
+    font-size: 100px;
+    font-family: primFont;
+    padding-top: 20px;
+    padding-left: 100px;
+
+}
+
+#appText2 {
+    font-size: 20px;
+    padding-left: 100px;
+}
+
+input[type=Search] {
+    margin-top: 25px;
+    min-width: 15vw;
+    color: white;
+    background-color: transparent;
+    border: none;
+    border-bottom: 2px solid white;
 }
 
 
@@ -45,7 +90,7 @@ body {
     box-shadow: inset 0 1px 5px #000000;
     height: 100vh;
     padding-left: 20px;
-    background-color: #ADACB5;
+    background-color: #EDF2F4;
     display: grid;
     grid-template: 1fr 1fr 1fr / 1fr 1fr 1fr;
     grid-row-start: 2;
@@ -85,7 +130,7 @@ body {
     box-shadow: 3px 3px 10px black;
     border: 1px solid black;
     border-radius: 8px;
-    background-color: #e4e3e6;
+    background-color: #ffffff;
 }
 
 
@@ -108,5 +153,5 @@ body {
     box-shadow: 1px 1px 5px black;
     border: 1px solid black;
     border-radius: 8px;
-    background-color: #e4e3e6;
+    background-color: #ffffff;
 }
