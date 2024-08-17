@@ -1,52 +1,116 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
 
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Document</title>
-        <link rel="stylesheet" href="styles.css">
-        
-    </head>
-
-    <body>
-        <div class="container">
-            <div class="grid" id="sideBar">
-                MENU
-            </div>
-            <div class="grid" id="header">
-                <div id="searchDiv">
-                    <input type="Search"placeholder="Search..">
-                </div>
-            <div></div>
-            <div id="appText"><i class="fa-regular fa-eye fa-xs" style="color: #ffffff;"></i> Overseer<br>
-                <div id="appText2">Telling On Your Employees Since 2024 </div>
-            </div>
-            <div id="icons"><i class="fa-solid fa-earth-americas fa-xl" style="color: #ffffff;"></i>
-            <i class="fa-solid fa-user fa-xl" style="color: #ffffff;"></i>
-        <i class="fa-solid fa-bars fa-xl" style="color: #ffffff;"></i></div>
-            
-            </div>
-            
-            
-            <div class="grid" id="mainContentArea">
-                <p id="mainCardAreaTitle">Test Paragraph</p>
-                <div class="grid" id="cardSet">
-                    <div id="card1">Card 1</div>
-                    <div id="card2">Card 2</div>
-                    <div id="card3">Card 3</div>
-                    <div id="card4">Card 4</div>
-                    <div id="card5">Card 5</div>
-                    <div id="card6">Card 6</div>
-                </div>
-                <p id="rightCardAreaTitle">Right Side Card Paragraph</p>
-                <div class="grid" id="rightCardSet">
-                    <div>Right Side Card 1</div>
-                    <div>Right Side Card 2</div>
-                </div>
-            </div>
+  <body>
+    <div class="container">
+      <div id="mySidenav" class="sidenav">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()"
+          >&times;</a
+        >
+        <a class="navLinks" href="#">About</a>
+        <a class="navLinks" href="#">Services</a>
+        <a class="navLinks" href="#">Clients</a>
+        <a class="navLinks" href="#">Contact</a>
+      </div>
+      <div class="grid" id="header">
+        <div id="searchDiv">
+          <input type="Search" placeholder="Search.." />
+          <i
+            class="fa-solid fa-magnifying-glass fa-xs"
+            style="color: #ffffff"
+          ></i>
         </div>
-        <script src="https://kit.fontawesome.com/06d3f9d209.js" crossorigin="anonymous"></script>
-    </body>
 
+        <a href="Main">
+          <div id="appText">
+            <p id="title">MacFarlane</p>
+            <p id="appText2">Artworks</p>
+          </div>
+        </a>
+        <div id="icons">
+          <a href="Connect">
+            <i
+              class="fa-solid fa-earth-americas fa-xl"
+              style="color: #ffffff"
+            ></i
+          ></a>
+          <a href="Login"
+            ><i class="fa-solid fa-user fa-xl" style="color: #ffffff"></i
+          ></a>
+          <a onclick="openNav()">
+            <i class="fa-solid fa-bars fa-xl" style="color: #ffffff"></i
+          ></a>
+        </div>
+      </div>
+      
+      <div class="grid" id="mainContentArea">
+        <p id="rightCardAreaTitle">About Me</p>
+        <div class="grid" id="cardSet">
+          <div id="card1">
+            <div id="cardBorder"></div>
+            <div id="card1Img"></div>
+          </div>
+          <div id="card2">
+            <div id="cardBorder"></div>
+            <div id="card2Img"></div>
+          </div>
+          <div id="card3">
+            <div id="cardBorder"></div>
+            <div id="card3Img"></div>
+          </div>
+          <div id="card4">
+            <div id="cardBorder"></div>
+            <div id="card4Img"></div>
+          </div>
+          <div id="card5">
+            <div id="cardBorder"></div>
+            <div id="card5Img"></div>
+          </div>
+          <div id="card6">
+            <div id="cardBorder"></div>
+            <div id="card6Img"></div>
+          </div>
+        </div>
+
+        <div class="grid" id="rightCardSet">
+          <div id="author"></div>
+          <div>
+            <p id="bio">
+              Hi! I’m Kristi MacFarlane, a tattoo artist based in Denver,
+              Colorado. Art has always been a huge part of my life, but it
+              wasn’t until I discovered tattooing that I truly found my creative
+              voice. There’s something incredibly powerful about transforming
+              ideas into designs that people carry with them forever. Each
+              tattoo I create is a piece of art with its own story, and I love
+              collaborating with my clients to bring their visions to life.
+              <br />
+              Living in Denver, I’m constantly inspired by the energy of the
+              city and the beauty of the surrounding landscapes. My work is a
+              reflection of both my personal journey and the diverse experiences
+              of those I have the privilege to tattoo. <br />
+              <br />
+
+              I see tattooing as more than just a job—it’s a way to connect with
+              people on a deeper level, helping them express their identities
+              and commemorate the moments that matter most. Whether you’re
+              looking for something bold, intricate, or uniquely personal, I’m
+              here to help you turn your ideas into a tattoo that you’ll be
+              proud to wear. Let’s create something meaningful together!
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script
+      src="https://kit.fontawesome.com/06d3f9d209.js"
+      crossorigin="anonymous"
+    ></script>
+    <script src="webScripts.js"></script>
+  </body>
 </html>
